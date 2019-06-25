@@ -6,3 +6,8 @@
 # ---> Nim
 nimcache/
 
+# ---> Project specific
+# Binaries #
+ip4
+ip6
+"validateip"
