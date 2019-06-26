@@ -1,3 +1,6 @@
+# See LICENSE.
+# Copyright (C) 2019 Akito
+
 import strutils, validateip/ip4
 export ip4
 
