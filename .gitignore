@@ -11,3 +11,4 @@ nimcache/
 ip4
 ip6
 "validateip"
+notes.nim

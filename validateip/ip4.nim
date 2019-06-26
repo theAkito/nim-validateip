@@ -1,46 +1,12 @@
 import strutils
 
-type   
-  Ip4a* = object
-    Sub0: aRange
-    Sub1: BaseRange
-    Sub2: BaseRange
-    Sub3: BaseRange
-
-  Ip4b* = object
-    Sub0: bRange
-    Sub1: BaseRange
-    Sub2: BaseRange
-    Sub3: BaseRange
-
-  Ip4c* = object
-    Sub0: cRange
-    Sub1: BaseRange
-    Sub2: BaseRange
-    Sub3: BaseRange 
-
-  Ip4d* = object
-    Sub0: dRange
-    Sub1: BaseRange
-    Sub2: BaseRange
-    Sub3: BaseRange
-
-  Ip4all* = object
-    Sub0: BaseRange
-    Sub1: BaseRange
-    Sub2: BaseRange
-    Sub3: BaseRange
-  
-  
+type
   aRange = range[0..127]
   bRange = range[128..191]
   cRange = range[192..223]
   dRange = range[224..239]
   BaseRange = range[0..255]
   ClassRange = range['A'..'D']
-  
-  ClassNick = enum
-    large, medium, small, multicast
 
 proc getPrime(address: string): int =
   let
@@ -49,6 +15,9 @@ proc getPrime(address: string): int =
   return prime
 
 proc isIp4*(address: string): bool =
+  ## Checks if IP address given as string is an IPv4
+  ## address, at all. Returns true, if IP address is within
+  ## the range of 0.0.0.0 to 255.255.255.255
   let splitAddress = address.split('.')
   if splitAddress.len != 4:
     return false
@@ -63,6 +32,11 @@ proc isIp4*(address: string): bool =
       return false
 
 proc validIp4*(address: string, class: ClassRange): bool =
+  ## Checks if given IP address is of a certain IPv4 class or not.
+  ## By providing a char for the `class` parameter you choose
+  ## which class the given IP address should match with.
+  ## Returns true, if `address` matches with the specified `class`
+  ## requirements.
   if not address.isIp4:
     return false
   else:
@@ -80,4 +54,4 @@ proc validIp4*(address: string, class: ClassRange): bool =
         "Invalid IPv4 address class.".quit
       return true
     except:
-      return false      
+      return false

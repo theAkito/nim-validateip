@@ -1,7 +1,6 @@
 import strutils
 
-type IpAddress = object
-  Sub0: int
-  Sub1: int
+type
+  ClassNick = enum
+    large, medium, small, multicast
 
-#TODO: make .split.parseInt and then apply the resulting Int sequence to IpAddress object, with sequence contents as arguments for IpAddress properties.
