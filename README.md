@@ -1,13 +1,19 @@
-# What is it?
+## What is this?
 This is a Nim module that evaluates if a given string is an IPv4 address. Evaluation of specific IPv4 address ranges is also possible. See examples below.
 
-# Documentation
+## Tests
+```bash
+nimble test
+```
+Runs tests.
+
+## Documentation
 ```bash
 nim doc --project validateip.nim
 ```
 Creates documentation for the entire project.
 
-# Examples
+## Examples
 
 #### Check if given _string_ is an IP address:
 
