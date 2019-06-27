@@ -31,6 +31,7 @@ proc isIp4*(address: string): bool =
         partAddr1: BaseRange = splitAddress[1].parseInt
         partAddr2: BaseRange = splitAddress[2].parseInt
         partAddr3: BaseRange = splitAddress[3].parseInt
+      return true
     except:
       return false
 
