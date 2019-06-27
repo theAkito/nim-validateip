@@ -12,7 +12,12 @@ Creates documentation for the entire project.
 #### Check if given _string_ is an IP address:
 
 ```nim
-let myIp = isIp4("11.0.5.2")
+let myIp = "11.0.5.2".isIp4
+assert myIp == true
+```
+
+```nim
+let myIp = "11.0.5.2".isValidIp4
 assert myIp == true
 ```
 
