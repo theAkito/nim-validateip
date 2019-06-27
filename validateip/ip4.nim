@@ -45,14 +45,14 @@ proc validIp4*(address: string, class: ClassRange): bool =
     return false
   else:
     try:
-      case class.toLowerAscii
-      of 'a':
+      case class
+      of 'A':
         let validPrime: aRange = address.getPrime
-      of 'b':
+      of 'B':
         let validPrime: bRange = address.getPrime
-      of 'c':
+      of 'C':
         let validPrime: cRange = address.getPrime
-      of 'd':
+      of 'D':
         let validPrime: dRange = address.getPrime
       else:
         "Invalid IPv4 address class.".quit
