@@ -54,8 +54,6 @@ proc validIp4*(address: string, class: ClassRange): bool =
         let validPrime: cRange = address.getPrime
       of 'D':
         let validPrime: dRange = address.getPrime
-      else:
-        "Invalid IPv4 address class.".quit
       return true
     except:
       return false
