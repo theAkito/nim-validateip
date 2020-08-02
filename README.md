@@ -1,3 +1,5 @@
+[![nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble.png)](https://nimble.directory/pkg/validateip)
+
 ## What is this?
 This is a Nim module that evaluates if a given string is an IPv4 address. Evaluation of specific IPv4 address ranges is also possible. See examples below.
 
