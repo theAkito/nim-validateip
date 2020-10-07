@@ -1,5 +1,10 @@
 [![nimble](https://raw.githubusercontent.com/yglukhov/nimble-tag/master/nimble.png)](https://nimble.directory/pkg/validateip)
 
+[![Language](https://img.shields.io/badge/language-Nim-orange.svg?style=plastic)](https://nim-lang.org/)
+
+[![GitHub](https://img.shields.io/badge/license-GPL--3.0-informational?style=plastic)](https://www.gnu.org/licenses/gpl-3.0.txt)
+[![Liberapay patrons](https://img.shields.io/liberapay/patrons/Akito?style=plastic)](https://liberapay.com/Akito/)
+
 ## What is this?
 This is a Nim module that evaluates if a given string is an IPv4 address. Evaluation of specific IPv4 address ranges is also possible. See examples below.
 
