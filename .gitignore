@@ -3,6 +3,15 @@
 .*.kate-swp
 .swp.*
 
+# ---> Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
 # ---> Nim
 nimcache/
 nimblecache/
@@ -14,6 +23,8 @@ htmldocs/
 ip4
 ip6
 "validateip"
+validateip.out
+validateip_debug
 testplus
 testminus
 # Misc #

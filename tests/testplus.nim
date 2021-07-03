@@ -1,4 +1,6 @@
-import validateip
+import
+  validateip,
+  os
 
 include validateip/ip4
 
@@ -26,3 +28,5 @@ assert ipA_isValidIp4 == true
 assert ipB_isValidIp4 == true
 assert ipC_isValidIp4 == true
 assert ipD_isValidIp4 == true
+
+("tests" / "testplus").removeFile

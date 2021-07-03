@@ -23,5 +23,5 @@ proc isValidIp4*(address: string, class: string = ""): bool =
       if isIp4(address): return true
     else:
       "Invalid IPv4 address class.".quit
-  except ValueError, RangeError:
+  except ValueError, RangeDefect:
     return false

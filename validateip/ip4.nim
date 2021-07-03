@@ -1,6 +1,8 @@
 # See LICENSE.
 # Copyright (C) 2019 Akito
 
+{.push used, warning[UnusedImport]: off.}
+
 import strutils
 
 type
@@ -57,3 +59,5 @@ proc validIp4*(address: string, class: ClassRange): bool =
       return true
     except:
       return false
+
+{.pop.}
